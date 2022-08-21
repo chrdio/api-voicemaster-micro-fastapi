@@ -1,0 +1,6 @@
+{
+    "title": "microvoicemaster",
+    "port": 8002,
+    "host": "127.0.0.1",
+    "reload": true
+}

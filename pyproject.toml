@@ -9,7 +9,7 @@ python = "^3.8"
 fastapi = "^0.79"
 uvicorn = "^0.18.2"
 aiohttp = "^3.8.1"
-voicemaster = {path = "../voicemaster/dist/voicemaster-0.1.0-py3-none-any.whl"}
+voicemaster = {path = "../voicemaster/dist/voicemaster-0.2.0-py3-none-any.whl"}
 
 [tool.poetry.dev-dependencies]
 

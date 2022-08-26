@@ -81,7 +81,7 @@ unicode_backport = ["unicodedata2"]
 
 [[package]]
 name = "chrdiotypes"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 category = "main"
 optional = false
@@ -89,7 +89,7 @@ python-versions = ">=3.9,<4.0"
 
 [package.source]
 type = "file"
-url = "../chrdiotypes/dist/chrdiotypes-0.1.0-py3-none-any.whl"
+url = "../chrdiotypes/dist/chrdiotypes-0.1.1-py3-none-any.whl"
 
 [[package]]
 name = "click"
@@ -223,20 +223,20 @@ standard = ["colorama (>=0.4)", "httptools (>=0.4.0)", "python-dotenv (>=0.13)",
 
 [[package]]
 name = "voicemaster"
-version = "0.2.2"
+version = "0.2.3"
 description = "A library to transform chord-like blobs into voices."
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 
 [package.dependencies]
-chrdiotypes = "0.1.0"
+chrdiotypes = "0.1.1"
 pydantic = ">=1.6.2,<2.0.0"
 typing-extensions = ">=4.3.0,<5.0.0"
 
 [package.source]
 type = "file"
-url = "../voicemaster/dist/voicemaster-0.2.2-py3-none-any.whl"
+url = "../voicemaster/dist/voicemaster-0.2.3-py3-none-any.whl"
 
 [[package]]
 name = "yarl"
@@ -253,7 +253,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "81541376c0b2939efeb1e12c28867e589e239aff2387ff1af2a537cee83b9254"
+content-hash = "90122ab93fcc2c78df8dd460e605cdc7301cfe27e72682853ee6f0103d920877"
 
 [metadata.files]
 aiohttp = [
@@ -351,7 +351,7 @@ charset-normalizer = [
     {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"},
 ]
 chrdiotypes = [
-    {file = "chrdiotypes-0.1.0-py3-none-any.whl", hash = "sha256:64b5f09cf96d0526e551780766188fe3638dfa9d8454435b3e085d3d08fdc9a6"},
+    {file = "chrdiotypes-0.1.1-py3-none-any.whl", hash = "sha256:2a28f2a6b201c97eb325e5da113ed04a0184ccd52045c985dee7c49d0e5c2d99"},
 ]
 click = [
     {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},
@@ -549,7 +549,7 @@ uvicorn = [
     {file = "uvicorn-0.18.3.tar.gz", hash = "sha256:9a66e7c42a2a95222f76ec24a4b754c158261c4696e683b9dadc72b590e0311b"},
 ]
 voicemaster = [
-    {file = "voicemaster-0.2.2-py3-none-any.whl", hash = "sha256:9b01828a498c0f45afcd42ee1a30f05509853f71ef435b1d40830314ee70e942"},
+    {file = "voicemaster-0.2.3-py3-none-any.whl", hash = "sha256:e1fa96369f53872dc9a2834c4b63f3f782b94808d6dd2a2509f15e0d7fa46b3f"},
 ]
 yarl = [
     {file = "yarl-1.8.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:abc06b97407868ef38f3d172762f4069323de52f2b70d133d096a48d72215d28"},

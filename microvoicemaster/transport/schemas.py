@@ -1,6 +1,6 @@
-from typing import List, Optional, Tuple
+from typing import Optional
 from pydantic import BaseModel
-from voicemaster import ChordIntervalStructures, ChordSymbolStructures, PseudoMIDI, CheetSheet
+from chrdiotypes.transport import PseudoMIDI, CheetSheet, PerformanceTransport
 
 class Endpoint(BaseModel):
     name: str
@@ -18,15 +18,10 @@ class Endpoint(BaseModel):
         return f"{self.prefix}{self.host}:{self.port}/{self.path}{option}"
 
 
-class PerformanceData(BaseModel):
-    perf_id: str
-    key: int
-    path_nodes: List[Tuple[str, str]]
 
-
-def construct_voice_data(voices: PseudoMIDI, cheet_sheet: CheetSheet) -> PerformanceData:
+def construct_voice_data(voices: PseudoMIDI, cheet_sheet: CheetSheet) -> PerformanceTransport:
     nodes = cheet_sheet.info
-    performance = PerformanceData(
+    performance = PerformanceTransport(
         perf_id=voices.ticket,
         key=cheet_sheet.key,
         path_nodes=nodes

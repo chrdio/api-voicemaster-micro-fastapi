@@ -1,5 +1,5 @@
 from fastapi.encoders import jsonable_encoder
-from pydantic import BaseModel
+from chrdiotypes.data_enums import BaseModel
 from aiohttp import ClientSession
 from .endpoints import Endpoint
 

@@ -2,7 +2,7 @@ import json
 import time
 from fastapi import FastAPI, BackgroundTasks, Request
 from voicemaster import perform
-from chrdiotypes.transport import CheetSheet
+from chrdiotypes.musical import CheetSheet
 
 from transport import ensure_voices_bg
 from logsetup import get_logger

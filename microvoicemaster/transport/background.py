@@ -1,5 +1,5 @@
 from aiohttp import ClientSession
-from chrdiotypes.transport import PseudoMIDI, CheetSheet
+from chrdiotypes.musical import PseudoMIDI, CheetSheet
 from .caller import post_single_request
 from .endpoints import ENDPOINTS
 from .schemas import construct_voice_data

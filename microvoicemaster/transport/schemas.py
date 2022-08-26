@@ -1,6 +1,7 @@
 from typing import Optional
-from pydantic import BaseModel
-from chrdiotypes.transport import PseudoMIDI, CheetSheet, PerformanceTransport
+from chrdiotypes.data_enums import BaseModel
+from chrdiotypes.musical import PseudoMIDI, CheetSheet
+from chrdiotypes.transport import PerformanceTransport
 
 class Endpoint(BaseModel):
     name: str

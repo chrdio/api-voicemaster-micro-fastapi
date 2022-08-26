@@ -85,7 +85,7 @@ version = "0.1.0"
 description = ""
 category = "main"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = ">=3.9,<4.0"
 
 [package.source]
 type = "file"
@@ -351,7 +351,7 @@ charset-normalizer = [
     {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"},
 ]
 chrdiotypes = [
-    {file = "chrdiotypes-0.1.0-py3-none-any.whl", hash = "sha256:33156e8d1650d3c7b7ef94f6d1f7e1ab7ebce4ec381f29d6822eaa2213c0da65"},
+    {file = "chrdiotypes-0.1.0-py3-none-any.whl", hash = "sha256:64b5f09cf96d0526e551780766188fe3638dfa9d8454435b3e085d3d08fdc9a6"},
 ]
 click = [
     {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},

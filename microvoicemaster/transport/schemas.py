@@ -1,5 +1,5 @@
 from typing import Optional
-from chrdiotypes.data_enums import BaseModel
+from pydantic import BaseModel
 from chrdiotypes.musical import PseudoMIDI, CheetSheet
 from chrdiotypes.transport import PerformanceTransport
 

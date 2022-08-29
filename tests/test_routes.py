@@ -16,6 +16,11 @@ def test_perform_200(info, structures, special_cases, bases, key, ordering):
     response = TEST_APP.post('/perform', payload)
     assert response.status_code == 200
 
+def test_perform_422():
+    payload = '{"key": 4}'
+    response = TEST_APP.post('/perform', payload)
+    assert response.status_code == 422
+
 def test_endpoint_builder():
     raw = """{"name": "microaccountant/music","host": "127.0.0.1","port": "8004","path": "ensure/music"}"""
     ep = Endpoint.parse_raw(raw)

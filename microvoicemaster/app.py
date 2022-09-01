@@ -1,5 +1,5 @@
 import time
-from fastapi import FastAPI, BackgroundTasks, Request
+from fastapi import FastAPI, BackgroundTasks, Request, Response
 from voicemaster import perform
 from chrdiotypes.musical import CheetSheet
 
@@ -28,3 +28,7 @@ def get_performance(
     logrequest.info(f"Performed {cheet_sheet}")
     background_tasks.add_task(ensure_voices_bg, voices, cheet_sheet)
     return voices
+
+@app.get("/healthcheck")
+async def healthcheck():
+    return Response(status_code=200)

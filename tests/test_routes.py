@@ -9,17 +9,27 @@ from hypothesis import given, strategies as st
 # hence ignoring the server exceptions
 TEST_APP = TestClient(APP, raise_server_exceptions=False)
 
+
 @given(**chsh_strategies)
 def test_perform_200(info, structures, special_cases, bases, key, ordering):
-    chsh = CheetSheet(info=info, structures=structures, special_cases=special_cases, bases=bases, key=key, ordering=ordering)
+    chsh = CheetSheet(
+        info=info,
+        structures=structures,
+        special_cases=special_cases,
+        bases=bases,
+        key=key,
+        ordering=ordering,
+    )
     payload = chsh.json()
-    response = TEST_APP.post('/perform', payload)
+    response = TEST_APP.post("/perform", payload)
     assert response.status_code == 200
+
 
 def test_perform_422():
     payload = '{"key": 4}'
-    response = TEST_APP.post('/perform', payload)
+    response = TEST_APP.post("/perform", payload)
     assert response.status_code == 422
+
 
 def test_endpoint_builder():
     raw = """{"name": "microaccountant/music","host": "127.0.0.1","port": "8004","path": "ensure/music"}"""

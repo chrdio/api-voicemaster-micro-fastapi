@@ -1,6 +1,7 @@
 import uvicorn
 import json
 from microvoicemaster import APP
+
 with open("config.json", "r") as config_file:
     config = json.load(config_file)
     TITLE = config["title"]

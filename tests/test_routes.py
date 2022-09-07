@@ -36,3 +36,6 @@ def test_endpoint_builder():
     ep = Endpoint.parse_raw(raw)
     ep.option = "5"
     assert str(ep)
+
+def test_healthcheck():
+    assert TEST_APP.get("/healthcheck").ok

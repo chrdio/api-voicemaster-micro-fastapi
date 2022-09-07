@@ -19,6 +19,9 @@ pytest-cov = "^3.0.0"
 hypothesis = "^6.54.4"
 requests = "^2.28.1"
 
+[tool.pytest.ini_options]
+addopts = "-ra -q --cov=microvoicemaster --cov-branch --no-cov-on-fail --cov-report=term-missing:skip-covered --hypothesis-explain --color=yes"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

@@ -8,4 +8,13 @@ with open("config.json", "r") as config_file:
     PORT = config["port"]
     HOST = config["host"]
     RELOAD = config["reload"]
-uvicorn.run(APP, host=HOST, port=PORT, debug=True)
+APP.title = TITLE
+
+if __name__ == "__main__":
+    uvicorn.run(
+        "main:APP",
+        host=HOST,
+        port=PORT,
+        reload=RELOAD,
+        debug=True
+        )

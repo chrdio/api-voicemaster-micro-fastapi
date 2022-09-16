@@ -1,2 +1,2 @@
 from .endpoints import ENDPOINTS
-from .background import ensure_voices_bg
+from .background import register_with_database

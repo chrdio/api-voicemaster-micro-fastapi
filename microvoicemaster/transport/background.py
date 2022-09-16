@@ -5,7 +5,11 @@ from .endpoints import ENDPOINTS
 from .schemas import construct_voice_data
 
 
-async def ensure_voices_bg(voices: PseudoMIDI, cheet_sheet: CheetSheet):
+async def register_with_database(voices: PseudoMIDI, cheet_sheet: CheetSheet):
+    """Sends data about the generated performance
+    to the database microservice 'microaccountant'.
+    """
+
     session = ClientSession()
     endpoint = ENDPOINTS["microaccountant/music"]
     microaccountant_response = await post_single_request(

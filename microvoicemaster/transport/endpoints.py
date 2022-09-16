@@ -1,3 +1,5 @@
+"""Deserializes a json-file into the registry of valid endpoint objects."""
+
 import json
 from .schemas import Endpoint
 

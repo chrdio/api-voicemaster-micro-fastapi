@@ -4,4 +4,4 @@
 
 This microservice for converting chord into voices:
 - uses the propreitary **voicemaster** library to turn abstract chord definitions into concrete note-implementations
-- uses the pydantic library for data coercion
+- uses the **pydantic** library for data coercion
